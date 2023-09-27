@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel='stylesheet' type='text/css' href='./style.css'/>  
+    <title>My Title</title> 
+</head>
+<body>
+  <script src="./utc.js"></script>
+  <h2>Convert Timestamps to UTC/GMT</h2>
+  <p>Copy and paste timestamps as they appear in JSON files. This tool will convert it to UTC/GMT so you can easily narrow down the time frame in Splunk.</p>
+
+
+  <form action="javascript:dateToUtc()" name="date_utc">
+    <input type="text" name="date_string" placeholder="2023-01-01T09:00-04:00">
+    <button type="submit">Convert</button>
+  </form>
+  
+  <h3 id="result"></h3>
+
+</body>
+</html>
+
+
